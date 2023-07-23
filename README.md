@@ -2,7 +2,7 @@
 
 Sample GHA workflow that demonstrates how to create a composite action that incorporate post steps.
 
-The underlying composite action (cache) is using another composite action that allows it to create post steps.
+The underlying composite action (`.github/actions/cache`) is using another composite action that allows it to create post steps.
 
 ```yaml
 name: Cache
