@@ -1,0 +1,22 @@
+name: Composite Post Action Demo
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  demo:
+    name: Composite Post Action Demo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Demo
+        uses: ./.github/actions/with-post-steps
+        with:
+          main: echo "At main step"
+          post: echo "At post step"
+
+      - name: Echo
+        runs: echo "Hello world"
