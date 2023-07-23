@@ -6,7 +6,7 @@ runs:
   using: "composite"
   steps:
     - name: Cache
-        uses: ./.github/actions/with-post-steps
+        uses: with-post-steps
         with:
           main: echo "Restoring cache..."
           post: echo "Rebuilding cache..."
