@@ -1,6 +1,6 @@
 name: Cache
 
-description: "Generic JS Action to execute a main command and set a command as a post step."
+description: "Dummy action to perform cache."
 
 runs:
   using: "composite"
