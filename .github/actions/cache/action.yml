@@ -1,0 +1,12 @@
+name: Cache
+
+description: "Generic JS Action to execute a main command and set a command as a post step."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Cache
+        uses: ./.github/actions/with-post-steps
+        with:
+          main: echo "Restoring cache..."
+          post: echo "Rebuilding cache..."
