@@ -19,4 +19,4 @@ jobs:
           post: echo "At post step"
 
       - name: Echo
-        runs: echo "Hello world"
+        run: echo "Hello world"
